@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss -i ./src/assets/styles/tailwind.css -o ./src/assets/styles/output.css --watch",
+    "tailwind:production": "npx tailwindcss -i ./src/assets/styles/tailwind.css -o ./src/assets/styles/output.css --watch",
     "start:server": "npx nodemon backend/index.js"
   },
   "type": "module",
