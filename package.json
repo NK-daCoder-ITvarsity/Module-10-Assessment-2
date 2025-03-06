@@ -1,33 +1,16 @@
 {
   "name": "module-10-assessment-2",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind:production": "npx tailwindcss -i ./src/assets/styles/tailwind.css -o ./src/assets/styles/output.css --watch",
-    "start:server": "npx nodemon backend/index.js"
-  },
-  "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NK-daCoder-ITvarsity/Module-10-Assessment-2.git"
+    "compile:tailwindcss":"npx tailwindcss -i ./src/main.css -o ./src/output.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/NK-daCoder-ITvarsity/Module-10-Assessment-2/issues"
-  },
-  "homepage": "https://github.com/NK-daCoder-ITvarsity/Module-10-Assessment-2#readme",
   "description": "",
   "devDependencies": {
     "tailwindcss": "^3.4.17"
-  },
-  "dependencies": {
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "mongodb": "^6.14.2",
-    "mongoose": "^8.12.0",
-    "nodeman": "^1.1.2"
   }
 }

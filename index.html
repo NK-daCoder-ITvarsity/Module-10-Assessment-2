@@ -1,45 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Recipe Book | Login</title>
-        <link href="./src/assets/styles/output.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    </head>
-    <body class="flex items-center justify-center min-h-screen bg-gray-100">
-        <div class="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md">
-            <h2 class="text-2xl font-bold text-gray-800 text-center">Welcome Back</h2>
-            <p class="text-gray-500 text-center mb-6">Sign in to continue</p>
-            
-            <form action="#" method="POST" class="space-y-4" aria-labelledby="login-form">
-                <div class="relative">
-                    <span class="material-symbols-rounded absolute left-3 top-3 text-gray-500">person</span>
-                    <input type="text" id="username" name="username" placeholder="Username" required
-                        class="pl-10 w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                        aria-label="Username">
-                </div>
-                
-                <div class="relative">
-                    <span class="material-symbols-rounded absolute left-3 top-3 text-gray-500">lock</span>
-                    <input type="password" id="password" name="password" placeholder="Password" required
-                        class="pl-10 w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                        aria-label="Password">
-                </div>
-                
-                <div class="flex justify-between items-center text-sm">
-                    <label for="remember-me" class="flex items-center space-x-2 cursor-pointer">
-                        <input type="checkbox" id="remember-me" class="accent-blue-500">
-                        <span class="text-gray-600">Remember me</span>
-                    </label>
-                    <a href="#" class="text-blue-500 hover:underline">Forgot password?</a>
-                </div>
-                
-                <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-lg font-semibold hover:bg-blue-700 transition">Login</button>
-            </form>
-            
-            <p class="text-center text-sm text-gray-600 mt-4">Don't have an account? <a href="#" class="text-blue-500 hover:underline">Sign up</a></p>
-            <p><a href="./src/pages/recipes-list.html?category=main" class="text-sky-400 text-center text-sm w-full">Go To Developed Project Without Signing In</a></p>
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Recipe Book App</title>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./src/output.css"/>
+    <link rel="stylesheet" href="./src/modify.css"/>
+</head>
+<body class="flex flex-col justify-center items-center bg-image-index">
+    <header class="w-screen bg-sky-500 fixed top-0 left-0 flex justify-center items-center p-2">
+        <a href="./index.html" class="text-white font-semibold text-2xl flex items-center gap-2">
+            <img src="./assets/bg-images/carrot (1).png" alt="carrot image" class="w-10">
+            My Recipe Book
+        </a>
+    </header>
+    <main class="h-screen flex justify-center items-center">
+        <section aria-labelledby="menu">
+            <h1 class="hidden text-3xl text-white" id="menu">Book Menu Section</h1>
+
+            <ul class="flex flex-col gap-3">
+                <li><button class="px-4 py-2 text-center font-semibold border w-full bg-none hover:bg-white hover:text-black transition-all ease-in-out  border-white text-white">Meals</button></li>
+                <li><button class="px-4 py-2 text-center font-semibold border w-full bg-none hover:bg-white hover:text-black transition-all ease-in-out  border-white text-white">Desserts</button></li>
+                <li><button class="px-4 py-2 text-center font-semibold border w-full bg-none hover:bg-white hover:text-black transition-all ease-in-out  border-white text-white">Drinks</button></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="text-white font-semibold p-2 fixed bottom-0 w-screen text-center">
+        &copy;.2025 All Rights Reserverd
+    </footer>
+</body>
 </html>
