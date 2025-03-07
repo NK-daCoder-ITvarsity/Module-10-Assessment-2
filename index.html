@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Recipe Book App</title>
-    <script src="./src/scripts/app.js" defer></script>
+    
     <link rel="stylesheet" href="./src/styles/output.css"/>
     <link rel="stylesheet" href="./src/styles/modify.css"/>
 </head>
@@ -20,14 +20,14 @@
             <h1 class="hidden text-3xl text-white" id="menu">Book Menu Section</h1>
 
             <ul class="flex flex-col gap-3">
-                <li><button class="px-4 py-2 text-center font-semibold border w-full bg-none hover:bg-white hover:text-black transition-all ease-in-out  border-white text-white">Meals</button></li>
-                <li><button class="px-4 py-2 text-center font-semibold border w-full bg-none hover:bg-white hover:text-black transition-all ease-in-out  border-white text-white">Desserts</button></li>
-                <li><button class="px-4 py-2 text-center font-semibold border w-full bg-none hover:bg-white hover:text-black transition-all ease-in-out  border-white text-white">Drinks</button></li>
+                <li><a href="./src/pages/list-recipies.html?category=main" class="px-4 py-2 text-center font-semibold text-xl w-[50vw] bg-none hover:bg-white hover:text-black transition-all ease-in-out  border-white text-white block md:text-3xl border-2">Meals</a></li>
+                <li><a href="./src/pages/list-recipies.html?category=dessert" class="px-4 py-2 text-center font-semibold text-xl w-[50vw] bg-none hover:bg-white hover:text-black transition-all ease-in-out  border-white text-white block md:text-3xl border-2">Desserts</a></li>
+                <li><a href="./src/pages/list-recipies.html?category=drink" class="px-4 py-2 text-center font-semibold text-xl w-[50vw] bg-none hover:bg-white hover:text-black transition-all ease-in-out  border-white text-white block md:text-3xl border-2">Drinks</a></li>
             </ul>
         </section>
     </main>
     <footer class="text-white font-semibold p-2 fixed bottom-0 w-screen text-center">
-        &copy;.2025 All Rights Reserverd
+        &copy; 2025 All Rights Reserverd
     </footer>
 </body>
 </html>
