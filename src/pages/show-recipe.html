@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Advanced Recipe Book App | List Recipes | Show Recipe</title>
+    <script src="../../src/scripts/show-recipes.js" defer></script>
+    <link rel="stylesheet" href="../../src/styles/output.css"/>
+    <link rel="stylesheet" href="../../src/styles/modify.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
 </head>
-<body>
-    
+<body class="flex flex-col justify-center items-center bg-image-index" id="body">
+    <header class="w-screen bg-sky-500 fixed top-0 left-0 flex justify-between items-center p-4">
+        <a href="../../index.html" class="order-2 text-white font-semibold text-2xl md:px-3 flex items-center gap-2">
+            <img src="../../assets/bg-images/carrot (1).png" alt="carrot image" class="w-10">
+            My Recipe Book
+        </a>
+        <a href="../../index.html" class="order-1 text-white">
+            <span class="material-symbols-outlined">
+                arrow_back
+            </span>
+        </a>
+    </header>
+
+    <main class="h-screen flex justify-center items-center mt-32 py-[35rem]">
+        <section id="recipe-details-output">
+
+        </section>
+    </main>
+    <footer class="text-white font-semibold p-2 mt-10 w-screen text-center">
+        &copy; 2025 All Rights Reserverd
+    </footer>
 </body>
 </html>

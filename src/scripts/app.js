@@ -57,10 +57,10 @@ const getRecipeList = () => {
 
            output += `
                 <li class="block w-full md:w-auto">
-                    <a href="" class="text-white border-2 border-white block px-2 py-3 md:w-52 md:h-60 rounded-md hover:bg-white hover:text-black transition-all">
-                        <article class="h-full flex flex-col items-center justify-center">
+                    <a href="./show-recipe.html?id=${element.id}" class="text-white border-2 border-white block md:px-2 md:py-3 md:w-52 md:h-60 rounded-md hover:bg-white hover:text-black transition-all">
+                        <article class="h-full flex flex-col md:items-center md:justify-center px-3 py-2 md:p-0">
                             <section>
-                                <h1 class="text-xl py-2 font-semibold">${element.title}</h1>
+                                <h1 class="text-xl md:py-2 font-semibold">${element.title}</h1>
                                 <p class="text-sm">${element.description}</p>
                             </section>
                         </article>
